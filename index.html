@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
+    <h4>Etch-A-Sketch</h4>
 </head>
 <body>
-    <div id="container"></div>
-    <input type="text" value="16" id="value" onchange="createBoard(this.value)">
-    <button id="btn"></button>
-
+    <div id="papi-grid">
+        <div id="grid-layout">
+            <div id="container"></div>
+        </div>
+        <div id="grid-layout2">
+            <input type="text" value="" id="value" onchange="createBoard(this.value)">
+            <button class="boton" id="btn">Set squares</button>
+            <button class="boton" onclick="setColor('black')">Black</button>
+            <button class="boton" onclick="setColor('aliceblue')">White</button>
+            <button class="boton" onclick="setColor('random')">Random</button>
+            <button class="boton" onclick="resetBoard()">Reset</button>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
