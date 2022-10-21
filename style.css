@@ -1,0 +1,11 @@
+#container {
+    border: thin solid red;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    margin: 0 auto;
+}
+
+.inside {
+    border: thin solid black;
+}
